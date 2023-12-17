@@ -2,20 +2,22 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="" />
+    <link rel="icon" type="image/png" href="src/img/logo.png" />
     <link rel="stylesheet" href="src/style.scss">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400&display=swap">
     <title>Cool Website</title>
   </head>
   <body>
-    <header>
-      <img src="" alt="Website logo" class="header__logo">
+    <header class="header">
+      <img src="src/img/logo.png" alt="Website logo" class="header__logo">
       <nav class="navbar">
         <ul class="navbar__list">
-          <li class="navbar__item">Home</li>
-          <li class="navbar__item">Shows</li>
-          <li class="navbar__item">Virtual Performance</li>
-          <li class="navbar__item">Contact</li>
+          <li class="navbar__item"><a href="">Home</a></li>
+          <li class="navbar__item"><a href="">Shows</a></li>
+          <li class="navbar__item"><a href="">Virtual Performance</a></li>
+          <li class="navbar__item"><a href="">Contact</a></li>
         </ul>
       </nav>
       <div class="registration">
@@ -28,43 +30,52 @@
         </button>
       </div>
       <div class="socials">
-        <a href=""><img src="" alt="Instagram link" class="socials__img instagram"></a>
-        <a href=""><img src="" alt="Facebook link" class="socials__img facebook"></a>
+        <a href=""><img src="src/img/Instagram.png" alt="Instagram link" class="socials__img instagram"></a>
+        <a href=""><img src="src/img/Facebook.png" alt="Facebook link" class="socials__img facebook"></a>
       </div>
     </header>
     <main>
       <div class="front-page">
+        <img src="src/img/FrontPageBG.png" alt="" class="front-page__background">
         <h1 class="front-page__text">Live Good Music</h1>
       </div>
       <div class="upcoming">
         <h2 class="upcoming__header">Upcoming Shows</h2>
-        <ul class="upcoming__list">
-          <li class="upcoming__item">
-            <img src="" alt="Artist's picture" class="upcoming__photo">
-            <p class="upcoming__date">20 sep / 08pm</p>
-            <button class="upcoming__button">
-              <p>Buy Ticket</p>
-            </button>
-          </li>
-          <li class="upcoming__item">
-            <img src="" alt="Artist's picture" class="upcoming__photo">
-            <p class="upcoming__date">22 sep / 08pm</p>
-            <button class="upcoming__button">
-              <p>Buy Ticket</p>
-            </button>
-          </li>
-          <li class="upcoming__item">
-            <img src="" alt="Artist's picture" class="upcoming__photo">
-            <p class="upcoming__date">25 sep / 08pm</p>
-            <button class="upcoming__button">
-              <p>Buy Ticket</p>
-            </button>
-          </li>
-        </ul>
+        <div class="upcoming__wrapper">
+          <img src="/src/img/PinkTriangle.svg" alt="">
+          <ul class="upcoming__list">
+            <li class="upcoming__item">
+              <img src="src/img/RedMik.png" alt="Artist's picture" class="upcoming__photo">
+              <p class="upcoming__name">Red Mik</p>
+              <p class="upcoming__date">20 sep / 08pm</p>
+              <button class="upcoming__button">
+                <p>Buy Ticket</p>
+              </button>
+            </li>
+            <li class="upcoming__item">
+              <img src="src/img/BlackLove.png" alt="Artist's picture" class="upcoming__photo">
+              <p class="upcoming__name">Black Love</p>
+              <p class="upcoming__date">22 sep / 08pm</p>
+              <button class="upcoming__button">
+                <p>Buy Ticket</p>
+              </button>
+            </li>
+            <li class="upcoming__item">
+              <img src="src/img/RickRock.png" alt="Artist's picture" class="upcoming__photo">
+              <p class="upcoming__name">RickRock</p>
+              <p class="upcoming__date">25 sep / 08pm</p>
+              <button class="upcoming__button">
+                <p>Buy Ticket</p>
+              </button>
+            </li>
+          </ul>
+          <img src="/src/img/PinkTriangle.svg" alt="">
+        </div>
       </div>
       <div class="description">
         <img src="" alt="" class="description__img">
-        <p class="description__text"></p>
+        <p class="description__heading">online and live music</p>
+        <p class="description__text">Get to know the best of new music hand in hand of content curated by established artists and find out of the shows that are coming.</p>
       </div>
       <div class="app">
         <button class="app_button">
@@ -73,7 +84,7 @@
       </div>
       <div class="video">
         <div class="video__row">
-          <img src="" alt="" class="video__play">
+          <img src="/src/img/PlayButton.png" alt="" class="video__play">
           <p class="video__text">Relive The Shows</p>
         </div>
         <button class="video__button">
@@ -86,7 +97,7 @@
           <p class="tickets__date">November 20th - 08:00 pm.</p>
           <p class="tickets__moto">Line Up: Love Music</p>
           <div class="tickets__location">
-            <img src="" alt="Location icon">
+            <img src="/src/img/Location.svg" alt="Location icon">
             <p>Music Band Stadium - New York</p>
             <a href="" class="tickets__link">See Location</a>
           </div>
@@ -97,7 +108,7 @@
             <p class="tickets__text">Tickets available</p>
             <p class="tickets__percentage">53%</p>
           </div>
-          <img src="" alt="Tickets sellout progress" class="tickets__bar">
+          <img src="/src/img/ProgressBar.png" alt="Tickets sellout progress" class="tickets__bar">
           <div class="tickets__extra">
             <a href="" class="tickets__questions">Frequent Questions</a>
             <p>|</p>
@@ -106,9 +117,9 @@
         </div>
       </div>
     </main>
-    <footer>
+    <footer class="footer">
       <div class="footer__wrapper">
-        <img src="" alt="Logo" class="footer__logo">
+        <img src="/src/img/BigLogo.png" alt="Logo" class="footer__logo">
         <div class="footer__info">
           <div class="footer__column">
             <p class="footer__heading">About MC</p>
@@ -143,7 +154,7 @@
             </div>
           </div>
         </div>
-        <img src="" alt="Image of an eye" class="footer__eye">
+        <img src="/src/img/eye.png" alt="Image of an eye" class="footer__eye">
       </div>
       <div class="footer__copyright">
         <p>© 2021 Music Concert. All rights reserved</p>
