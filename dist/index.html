@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/assets/logo--zVg3IDW.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;1000&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400&display=swap"
+    />
+    <title>Cool Website</title>
+    <script type="module" crossorigin src="/assets/index--XRYINqY.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-u8QwahTy.css">
+  </head>
+  <body>
+    <div class="modal-window hidden">
+      <div class="modal-window__backdrop"></div>
+      <form action="" class="modal-window__form">
+        <label for="email">Email:</label>
+        <input type="email" id="email" required><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" required><br>
+        <button type="submit">Login</button>
+      </form>
+    </div>
+    <header class="header">
+      <img src="data:image/png;base64,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" alt="Website logo" class="header__logo" />
+      <input type="checkbox" id="burger-checkbox" class="header__burger-checkbox">
+      <label for="burger-checkbox" class="header__burger-label">
+        <span></span>
+      </label>
+      <div class="header__wrapper">
+        <nav class="navbar">
+          <ul class="navbar__list">
+            <li class="navbar__item"><a href="#description">Home</a></li>
+            <li class="navbar__item"><a href="#video">Shows</a></li>
+            <li class="navbar__item"><a href="#tickets">Virtual Performance</a></li>
+            <li class="navbar__item"><a href="#footer">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="registration">
+          <button class="registration__button">Sign Up</button>
+          <p class="registration__separator">|</p>
+          <button class="registration__button">Log In</button>
+        </div>
+        <div class="socials">
+          <a href=""
+            ><img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAC4jAAAuIwF4pT92AAABv0lEQVQ4jZ3VT4iNURjH8c997zUjEjXMxp/JbjZqShZKJJPEQmhCScNCNqQUSiRSk70srsjGv2QlKRNSYrARKTtl4c8tRRkNmdfinLf7djvX3PHbnJ7neZ/v+5znOadTWdzXr6QTOIj5OtdDnMJjqEVnL55hKT7hKn5MAcrQh0GsxUmcKYAFbAduTKM6mBsLOI2PNRyNsG24PU3YHHzDJrxHPYvkL/8Bu4kGdkf7MKGHXbjbJqmKvViPHPdwKcaWoRtLoj2GRtHDnwnYcoxiXsk3hBGswwBW436M5RjPotHVAuvBywgbwizMxk4swAtMlGAwA9VMWvW49uNW3ME4rsfKunEllZgCZtgi9ORdIv4KrzWHMSWwWkpspzdxrXQC/I1JbPwHcFBoQd4JEI5jEfYnYoeEwRxJJRbHZrLFP4LNuBCruSZsb1f0P8L5lpwceQGcSPxsJS5jWLiWherYl/j+Vxk4kCofe3AMK6I9Jly3lHrQW8MTrBKm+yfx4WfcaQMp6wBmZprlP+ggqZ3WRM7TGt4KEzuHDziL59L3u1AunJCF2CqchgY2VEpPwDAuClv/Lj2osiqaT8UotuPrX8TtWud3L8iNAAAAAElFTkSuQmCC"
+              alt="Instagram link"
+              class="socials__img instagram"
+          /></a>
+          <a href=""
+            ><img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAASCAYAAABit09LAAAACXBIWXMAAC4jAAAuIwF4pT92AAAAy0lEQVQokbXSPU5CURCG4edcrggao0RbcoMVyd2Clta2LsUNuAAqWlZioaGhNrY20lCYaGy0QAsvZjwJUvFV55t55+ckk/rVUKZTXOMCx/jAU5lBAzygG2IHOMnBUQbBEm9FCLRwHvw9alSoY8cuop/gcWVix3d8Zv5XJa6wg110Qu6yicEi9avhl826LTYzYFZiiv1m39rP72GOBRLuSpyFyhf0mvcNxqtEHJ2yccU6s5fB7bVV/2m7YMJR8H+uKB7BEs84bPxrBL8BVtoadX1UVXsAAAAASUVORK5CYII="
+              alt="Facebook link"
+              class="socials__img facebook"
+          /></a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="front-page">
+        <img
+          src="/assets/FrontPageBG-LrupxMuh.png"
+          alt=""
+          class="front-page__background"
+        />
+        <h1 class="front-page__text">Live Good Music</h1>
+      </div>
+      <div class="container">
+        <div class="wrapper">
+          <div class="upcoming">
+            <h2 class="upcoming__header">Upcoming Shows</h2>
+            <div class="upcoming__wrapper">
+              <img
+                class="upcoming__triangle"
+                src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20width='44px'%20height='44px'%3e%3cpath%20fill-rule='evenodd'%20fill='rgb(225,189,206)'%20d='M-0.001,21.996%20L43.997,-0.007%20L43.997,43.1000%20L-0.001,21.996%20Z'/%3e%3c/svg%3e"
+                alt=""
+              />
+              <ul class="upcoming__list">
+                <li class="upcoming__item">
+                  <img
+                    src="/assets/RedMik-yN_zl4Cr.png"
+                    alt="Artist's picture"
+                    class="upcoming__photo"
+                  />
+                  <p class="upcoming__name">Red Mik</p>
+                  <p class="upcoming__date">20 sep / 08pm</p>
+                  <button class="upcoming__button">Buy Ticket</button>
+                </li>
+                <li class="upcoming__item">
+                  <img
+                    src="/assets/BlackLove-ZNaLCuoO.png"
+                    alt="Artist's picture"
+                    class="upcoming__photo"
+                  />
+                  <p class="upcoming__name">Black Love</p>
+                  <p class="upcoming__date">22 sep / 08pm</p>
+                  <button class="upcoming__button">Buy Ticket</button>
+                </li>
+                <li class="upcoming__item">
+                  <img
+                    src="/assets/RickRock-Rt_xxZnu.png"
+                    alt="Artist's picture"
+                    class="upcoming__photo"
+                  />
+                  <p class="upcoming__name">RickRock</p>
+                  <p class="upcoming__date">25 sep / 08pm</p>
+                  <button class="upcoming__button">Buy Ticket</button>
+                </li>
+              </ul>
+              <img
+                class="upcoming__triangle"
+                src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20width='44px'%20height='44px'%3e%3cpath%20fill-rule='evenodd'%20fill='rgb(225,189,206)'%20d='M-0.001,21.996%20L43.997,-0.007%20L43.997,43.1000%20L-0.001,21.996%20Z'/%3e%3c/svg%3e"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="description" id="description">
+            <img src="/assets/Smiley-vihjcftC.png" alt="" class="description__img" />
+            <p class="description__heading">
+              online <br />
+              and live <br />
+              music
+            </p>
+            <p class="description__text">
+              Get to know the best of new
+              music hand in hand of content 
+              curated by established artists 
+              and find out of the shows 
+              that are coming.
+            </p>
+          </div>
+          <div class="app">
+            <button class="app__button">Download The App</button>
+          </div>
+          <div class="video" id="video">
+            <div class="video__row">
+              <img src="data:image/png;base64,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" alt="" class="video__play" />
+              <hr class="video__line" />
+              <p class="video__text">Relive The Shows</p>
+            </div>
+            <button class="video__button">Watch Video</button>
+          </div>
+          <div class="tickets" id="tickets">
+            <img src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20width='44px'%20height='44px'%3e%3cpath%20fill-rule='evenodd'%20fill='rgb(34,%2033,%2037)'%20d='M-0.001,21.996%20L43.997,-0.007%20L43.997,43.1000%20L-0.001,21.996%20Z'/%3e%3c/svg%3e" alt="" class="tickets__triangle" />
+            <div class="tickets__wrapper">
+              <h2 class="tickets__header">Tickets For Sale</h2>
+              <p class="tickets__date">November 20th - 08:00 pm.</p>
+              <p class="tickets__moto">Line Up: Love Music</p>
+              <div class="tickets__location">
+                <img src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20width='16px'%20height='20px'%3e%3cpath%20fill-rule='evenodd'%20fill='rgb(204,%2061,%2071)'%20d='M7.929,0.784%20C12.100,0.784%2015.482,4.089%2015.482,8.164%20C15.482,12.241%207.929,19.696%207.929,19.696%20C7.929,19.696%200.376,12.241%200.376,8.164%20C0.376,4.089%203.757,0.784%207.929,0.784%20Z'/%3e%3cpath%20fill-rule='evenodd'%20fill='rgb(0,%200,%200)'%20d='M8.165,4.474%20C10.120,4.474%2011.705,6.023%2011.705,7.934%20C11.705,9.844%2010.120,11.393%208.165,11.393%20C6.209,11.393%204.624,9.844%204.624,7.934%20C4.624,6.023%206.209,4.474%208.165,4.474%20Z'/%3e%3c/svg%3e" alt="Location icon" />
+                <p>Music Band Stadium - New York</p>
+                <a href="" class="tickets__link">See Location</a>
+              </div>
+              <button class="tickets__button">Buy Ticket</button>
+              <div class="tickets__available">
+                <p class="tickets__text">Tickets available</p>
+                <p class="tickets__percentage">53%</p>
+              </div>
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAgEAAAARCAYAAABEr3/TAAAACXBIWXMAAC4jAAAuIwF4pT92AAADMUlEQVR4nO3dO2wcVRQG4P/cO09PZm1ssInWQXYoHMAiIKSttkGKREeHoCcVBR0NkEi0FGkpIKKDCBqkFLxaJBCCxkVEJIgQiMjEebB+rHd35t5DMR4jgYkXJBhv9H/SSKsZzeqv5l6dufeMZNkqDpACiA+6QERERBNnCGAXAPqd7v5JybJVXH18S9YL8+oHt6KzX27ZuZ4XGwAq0lRWIjqKSkWxXsj1bV89TIjoyJO9IwBwG8AnAN7qd7o9YG8S8M7y4LV3b8bnnHrJjfrUQCOB1ncSEdVGisGnveDyrqJoOgsRHUoAGAARgAzAtIqUovpSv9P9Xl5eWmldGwY/T4kLH4zU32fV5RYaGVUL3f8HIqLadwN7+eJG+FnTOYjorurh26J6xd8CMA9gUYxJ1fsXgp8K+8qMceFyrGU7dm4ugJuyqpFw8Ceigz0UlUsXN8K1pnMQ0VjqSsAxAAsAbqv3K7D2ueAO4jOPxf3yZOLKxVjdjPU+EaipJgHabG4iOpJCLD+V+V++3TFl01GI6FAGVTUgRbUuYBeAkSh+Omj5EdqRc+1I3ULgXWZVI1EFWAkgor9l33t4R1fW8l7TQYjoUPUSvxDAYO93pqPRQnC/dcPZAH468L6eAHDwJ6IxpE0HIKKx6N4xArCFqhpwA65cN5nVYWZUE4GGnAAQERHdqxRAgep1wDaATWOMRWj21wAQERHRvcsDcAAKDQNvNpIZlvSI6N9gwyCiCWZmH2ibG1NzUeEhXrkVgIjGVgDYbDoEEf1j9U6B0M/MLZpjWfrVjyYPBgopVIQTASIaw5WVtZzbA4kmS71DIDXzxx/dzVvfmNPYPPdRfiq86vNwx4mMVMSDVQEiuquPmw5ARGMT/NE1MJfj7Sf6J5ZehDFvS5at4v0n0/Nv2lOvnx5uFGf89cGybhehKJsFEdFfKPDbpZvRMxd+DdkjgGgyGMRJrO0Tj5RZ63mXJF0v8iyAa/VXBM0tk7zxoT159nMzP3tFkihX55tOTURHi4f4OzDDslpdTEQTwoukAH4AcAnABVT9AqqvCP5Zv9M1AKb/z4BERET0n+lNff2FB4B+p7t/8nf43AXXdvU46AAAAABJRU5ErkJggg=="
+                alt="Tickets sellout progress"
+                class="tickets__bar"
+              />
+              <div class="tickets__extra">
+                <a href="" class="tickets__questions">Frequent Questions</a>
+                <p>|</p>
+                <a href="" class="tickets__terms">Terms and Conditions</a>
+              </div>
+            </div>
+            <img src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20width='44px'%20height='44px'%3e%3cpath%20fill-rule='evenodd'%20fill='rgb(34,%2033,%2037)'%20d='M-0.001,21.996%20L43.997,-0.007%20L43.997,43.1000%20L-0.001,21.996%20Z'/%3e%3c/svg%3e" alt="" class="tickets__triangle" />
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer" id="footer">
+      <div class="footer__wrapper">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADEAAAAtCAYAAAAHiIP8AAAACXBIWXMAAC4jAAAuIwF4pT92AAACiElEQVRoge3Zz0sVURjG8Y8jBEnUJhfZwghyIWG1K61FEBVFFO4saOU6+hNa9x+0DYIWRb8oiIoIqXWBJLYQUSqhVSIJUtTijFHqPWfm3lFmMd/dvfOe932ee+b8vF37+/t/a80jXIo83yoe4mKrh9nW6dg8GhN1oTFRFxoTdaExURcaE3WhMVEXGhN1oTFRFxoTdSFloi4mozoyxC4KdlarpW1iOn5nWIwE7K5YTLvEdCxmWIgEHEB3tXpK053raMVChulIwDYMVSqpPEO5jlZMZ5hKJDldnZ62SNWfyvAmEXS5IjHtkqr/JsMEfkaChjBSmaRyjIi/zj8xkWEJzxPJblQkqiypus+xtLqI3E4En8Jop4pKMprXjXEbuvb39xNG/yz2RBp8w2F86Vhemj68R28k5iv2YWW1J1ZwM5G4F/fQ05m+JD15nZgBgt4V/t+T3MJcouEx3Ld5Rnry/McScXOCXvxvYhnXCxQ6i1dCl1dJX573bIHY64JerN8dPhC6MsVR4Z2tarCP5vmOFoi9J+j8y0Zb3HHMFEjWK3T9CwwXiN+I4bz9fekxINc1vvbL1dlpLQfxVrmt+HvcwUt8sPEWvwuHhKnzijDbFWVRWPwm1yVtYQJOCIvJ9hKFVvmBT8K0/EMYsL0Y0N6ksIwzwu5iHTETBCNPsKuNwlXxHRe0MED6+DmB44qNkc1gJq/f0gDFztCTOIK7FYgqw9287roxsJaiFwGLGBP+EJ9tW1YxZvM6Y+JH57+Uvc14jEFcw3zJtinm87yDeZ3CpAZ2jG04j6s4J36EbMUKngm70af559J0YuJfeoSF66TwSw5gL3YIB/1fwrnlszD1fsRrvBOm4I74A112bR9+uWqDAAAAAElFTkSuQmCC" alt="Logo" class="footer__logo" />
+        <div class="footer__info">
+          <div class="footer__column">
+            <p class="footer__heading">About MC</p>
+            <hr class="footer__separator" />
+            <ul class="footer__list">
+              <li class="footer__item"><a href="">History</a></li>
+              <li class="footer__item"><a href="">Free Music</a></li>
+              <li class="footer__item"><a href="">Events</a></li>
+              <li class="footer__item"><a href="">Bands</a></li>
+            </ul>
+          </div>
+          <div class="footer__column">
+            <p class="footer__heading">Need Help?</p>
+            <hr class="footer__separator" />
+            <ul class="footer__list">
+              <li class="footer__item"><a href="">Help Center</a></li>
+              <li class="footer__item"><a href="">Author Terms</a></li>
+              <li class="footer__item"><a href="">Market licences</a></li>
+              <li class="footer__item"><a href="">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer__column">
+            <p class="footer__heading">Follow Us</p>
+            <hr class="footer__separator" />
+            <div class="socials">
+              <a href=""
+                ><img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAC4jAAAuIwF4pT92AAABv0lEQVQ4jZ3VT4iNURjH8c997zUjEjXMxp/JbjZqShZKJJPEQmhCScNCNqQUSiRSk70srsjGv2QlKRNSYrARKTtl4c8tRRkNmdfinLf7djvX3PHbnJ7neZ/v+5znOadTWdzXr6QTOIj5OtdDnMJjqEVnL55hKT7hKn5MAcrQh0GsxUmcKYAFbAduTKM6mBsLOI2PNRyNsG24PU3YHHzDJrxHPYvkL/8Bu4kGdkf7MKGHXbjbJqmKvViPHPdwKcaWoRtLoj2GRtHDnwnYcoxiXsk3hBGswwBW436M5RjPotHVAuvBywgbwizMxk4swAtMlGAwA9VMWvW49uNW3ME4rsfKunEllZgCZtgi9ORdIv4KrzWHMSWwWkpspzdxrXQC/I1JbPwHcFBoQd4JEI5jEfYnYoeEwRxJJRbHZrLFP4LNuBCruSZsb1f0P8L5lpwceQGcSPxsJS5jWLiWherYl/j+Vxk4kCofe3AMK6I9Jly3lHrQW8MTrBKm+yfx4WfcaQMp6wBmZprlP+ggqZ3WRM7TGt4KEzuHDziL59L3u1AunJCF2CqchgY2VEpPwDAuClv/Lj2osiqaT8UotuPrX8TtWud3L8iNAAAAAElFTkSuQmCC"
+                  alt="Instagram link"
+                  class="socials__img instagram"
+              /></a>
+              <a href=""
+                ><img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAASCAYAAABit09LAAAACXBIWXMAAC4jAAAuIwF4pT92AAAAy0lEQVQokbXSPU5CURCG4edcrggao0RbcoMVyd2Clta2LsUNuAAqWlZioaGhNrY20lCYaGy0QAsvZjwJUvFV55t55+ckk/rVUKZTXOMCx/jAU5lBAzygG2IHOMnBUQbBEm9FCLRwHvw9alSoY8cuop/gcWVix3d8Zv5XJa6wg110Qu6yicEi9avhl826LTYzYFZiiv1m39rP72GOBRLuSpyFyhf0mvcNxqtEHJ2yccU6s5fB7bVV/2m7YMJR8H+uKB7BEs84bPxrBL8BVtoadX1UVXsAAAAASUVORK5CYII="
+                  alt="Facebook link"
+                  class="socials__img facebook"
+              /></a>
+            </div>
+            <div class="footer__subscribe">
+              <p>Subscribe</p>
+              <p>GO</p>
+            </div>
+          </div>
+        </div>
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFcAAAAhCAYAAACsszewAAAACXBIWXMAAC4jAAAuIwF4pT92AAAFM0lEQVRogdXabYxcVR3H8c+d3dYWu8vMWmslTY9en6AajUWUtCUR0kSDRt8YrTHxIUpIRF/gO6MSn1IjgaiJCWrSmhhixPQFUA1IAZ+AxqcKEoTa9ppjWkihMtzW3W13dh1f3IGs3e7sPNyZbr/JeTP3nPM/88u55/4fTmJIpCEkeCM2IZ3X1mICtVY7m5OYwik8i2M4jojDOITDWYwzA/4LXZMMauI0hFW4CttxBS7H+HzD21Yltr6s6ZIVNJocafCrKY7Mdm1uDgfxVzyKP+JPWYzTff+RPihV3DSECXwE78M1WH2ufhtH+PJE4tIVzQXPmrhnku+e5PTCx93QwAH8HvfhoWGL3be4aQijeD8+gWuxsl3/N43ynbWJNZX2yj3VSNx4ommyP4Hncwa/wy9wVxZjLG3mRehZ3DSENfgMbsTGTsZMVNi9LjGxhLAv8vBpvvh8rytcksfwc9yRxXhkEAa6FjcNoaoQ9PPO/QFalK9NcPWq7ux9q849g3+Z/4Kf4KdZjCfKmrRjcVuv/w34Cl7RraE3jLJrXbejeGYuseN4U3mnQ1sa2Ivb8EAWY19mRzrplIawTXFWfRwX9WLok2Nc2vY0PjdjFZ6aSRyd68Vq14zgMsX/3FGrViu1avXJep6f6WWytjs3DeEi3IzPLtV3KSN71yfGOzxrz+b+ab5e79V630zidtySxXi4m4GVxR6kIWxW+I036NOrSEf1LCy8eeXA3PFOeDmuxz/SEH6WhvD2TgeeU9w0hOuxXxFR9c2mHo6D+bx6pKm26DYYGonChz+QhnBvGsKVSw34vyWnIaxMQ/gRfmAJf7UbJkoQpow5SuQ92J+G8Mt2O/mlJachXIx7cV3ZKxkrQZjxkSH5C91xrWIn35GG8PqzH1YgDWG9Inq5ehArKEOW5n9LmGRwfBh/T0O4tRUHgEoawgY8hLcOynJegjB587x+1DphBb6AQ2kIn0pDSCrYg9cN0upzffqoTZwYjp9bBmuxG3sr+BAeHqS1J/rMtP5rNnFqWR65i3ICX61kMR7Fu/ENRV60dI7O8exc76/1Y2cuKGWfxjVZjH+uQBbjbBbjTdiqyOyXzr6p3gW6r4+xQ+YgtmQxPs5Zfm4W4x/wNnwb3dcD2nD3VG+vxZFG4m+NZf8xg18rhH0pT7wgcVPP89l6nt9fq1bvwmZsKMPyf5rUEi7rMjTZ+ULi2PL/mN2Gj2UxTs7/cdGsWD3Pj9eq1d2KguC7FDF2Xzw6w1WrE9UOg4o7J9kzuXS/88g0rsti3FnPFzqcbVOO9Txv1vP8QK1a/aEitr4Co72uZBaPnGbrqsT4EgI/OM3NL5QTgAyIx/HeLMZ9i3XoKJ9bz/OZep4/UKtWb8er8BY9Zsomm0UKcd0Ir12xcJKpZmLXKb5/kmUalDXxPezIYny6XceeBEpD2ISd+GAv419k4wjbVnPJCDNN/jnLb6YtZ5/2SXw6i3F/J537y9MWIn9JkYrr6C24QJnEN3FrFmOj00Gl+DhpCK/B5xQZtfH2vS8o5vBj3JTF+Ey3g8u+FDKGjyoy95vLnHvINBT5ga5LO/MZ5HWmyxUXRXbglYOyUzK5YqfeksV4rN/JBh76tEry2xUJog9YnkL/Fruwp8wrT0ONK9MQKtiiKJNsxzu1KZIOkDlFDvtu3JnFmA3CyHkN2lulpS24stXeobhOWjYNRSV7Px7BvizGgRfrl11GpFVy2qS4nLGx1TZgPdZgzMJQfAb/xvN4ThGyH2q1g3gii/H0MNY/n/8BMOGGWaoxDxkAAAAASUVORK5CYII=" alt="Image of an eye" class="footer__eye" />
+      </div>
+      <div class="footer__copyright">
+        <p>© 2021 Music Concert. All rights reserved</p>
+      </div>
+    </footer>
+  </body>
+</html>
