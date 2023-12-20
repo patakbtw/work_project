@@ -1,0 +1,81 @@
+$pink: rgb(225,189,206);
+$orange: rgb(197,60,38);
+$dark-blue: rgb(34,33,37);
+$red: rgb(204,61,71);
+$black: rgb(26,8,6);
+
+
+.description {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+    background-color: $dark-blue;
+    color: $pink;
+    padding: 5%;
+    img {
+
+    }
+    
+    &__heading {
+      font-size: 3em;
+      width: 20%;
+    }
+    &__text {
+      text-transform: none;
+      font-size: 1.8em;
+      width: 33%;
+    }
+}
+
+@media (max-width: 1023px) {
+    .description {
+        gap: 20px;
+        img {
+            width: 46%;
+        }
+        &__heading {
+          font-size: 2em;
+        }
+        &__text {
+          text-transform: none;
+          font-size: 1.2em;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .description {
+        img {
+            width: 46%;
+        }
+        &__heading {
+          font-size: 1.5em;
+        }
+        &__text {
+          text-transform: none;
+          font-size: 1.2em;
+        }
+    }
+}
+
+@media (max-width: 424px) {
+    .description {
+        flex-direction: column;
+        overflow: scroll;
+        img {
+            width: 60%;
+        }
+        &__heading {
+          font-size: 1.5em;
+          width: 100%;
+        }
+        &__text {
+          text-transform: none;
+          font-size: 1.2em;
+          width: 100%;
+        }
+    }
+}

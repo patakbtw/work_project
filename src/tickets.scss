@@ -1,0 +1,154 @@
+$pink: rgb(225,189,206);
+$orange: rgb(197,60,38);
+$dark-blue: rgb(34,33,37);
+$red: rgb(204,61,71);
+$black: rgb(26,8,6);
+
+
+.tickets {
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $pink;
+    padding: 0 6%;
+    color: $black;
+    text-transform: none;
+    font-size: 1.5em;
+    &__wrapper {
+      width: 70%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+    }
+    &__triangle {
+      height: 42px;
+      &:nth-last-child(1) {
+        transform: scaleX(-1);
+      }
+    }
+    &__header {
+      text-transform: uppercase;
+      font-size: 3em;
+      white-space: nowrap;
+    }
+    &__date {
+    }
+    &__moto {
+    }
+    &__location {
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+      a {
+        color: $red;
+      }
+      img {
+        object-fit: contain;
+      }
+    }
+  
+    &__button {
+      color: $pink;
+      background-color: $black;
+      height: 50px;
+      width: 200px;
+      text-transform: uppercase;
+      letter-spacing: -1px;
+    }
+    &__available {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 510px;
+    }
+    &__text {
+    }
+    &__percentage {
+    }
+    &__bar {
+    }
+    &__extra {
+      display: flex;
+      flex-direction: row;
+      font-size: 0.8em;
+      gap: 10px;
+      align-items: center;
+      & > p {
+        font-size: 1.5em;
+      }
+    }
+    &__questions {
+    }
+    &__terms {
+    }
+    
+  }
+  @media (max-width: 1439px) {
+    .tickets {
+        &__header {
+            font-size: 2em;
+        }
+    }
+  }
+
+  @media (max-width: 1023px) {
+    .tickets {
+        font-size: 1em;
+
+        &__wrapper {
+            gap: 10px;
+        }
+        &__available {
+            width: calc(510px * 0.7);
+        }
+        &__bar {
+            scale: 0.7;
+        }
+    }
+  }
+
+  @media (max-width: 767px) {
+    .tickets {
+        &__triangle {
+            scale: 0.7;
+        }
+        &__available {
+            width: calc(510px * 0.5);
+        }
+        &__bar {
+            scale: 0.5;
+        }
+        &__extra {
+            white-space: nowrap;
+        }
+    }
+  }
+  @media (max-width: 424px) {
+    .tickets {
+        &__location {
+            font-size: 0.8em;
+        }
+        &__triangle {
+            scale: 0.4;
+        }
+        &__date {
+            white-space: nowrap;
+        }
+        &__available {
+            width: calc(510px * 0.4);
+        }
+
+        &__bar {
+            scale: 0.4;
+        }
+        &__extra {
+            white-space: nowrap;
+            font-size: 0.7em;
+        }
+    }
+  }

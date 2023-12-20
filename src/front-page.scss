@@ -1,0 +1,47 @@
+$pink: rgb(225,189,206);
+$orange: rgb(197,60,38);
+$dark-blue: rgb(34,33,37);
+$red: rgb(204,61,71);
+$black: rgb(26,8,6);
+
+
+.front-page {
+    height: calc(100vh - 95px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &__background {
+      z-index: -1;
+      width: 100%;
+      position: fixed;
+      object-fit: cover;
+      transform: translateY(45px);
+    }
+    &__text {
+      color: $dark-blue;
+      margin-top: auto;
+      font-size: 10em;
+      font-weight: 1000;
+    }
+  }
+  
+  @media (max-width: 1440px) {
+    .front-page {
+      &__text {
+        font-size: 7.5em;
+      }
+  
+      &__background {
+        width: auto;
+        height: 100vh;
+      }
+    }
+  }
+
+  @media (max-width: 424px) {
+    .front-page {
+        &__text {
+            font-size: 4.5em;
+          }
+    }
+}
